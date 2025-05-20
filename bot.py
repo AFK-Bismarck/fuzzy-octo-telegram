@@ -38,13 +38,14 @@ class Weather(
             if current_city == "Riga":
                 # data example - weather_data(latitude, longitude, timezone)
                 riga = weather_data(56.9496, 24.1052, "Moscow")
+                # data example - embed(title, 
+                #                           description)
                 riga_embed = hikari.Embed(title="**Riga**", description=f"Temperature: {riga[1]}°C\nWeather Condition: {riga[0]}\nFeels Like: {riga[4]}°C\nMinimum Temperature: {riga[2]}°C\nMaximum Temperature: {riga[3]}°C\n"+f"{outfit_recommender(riga[1], riga[0])}")
                 await ctx.respond(riga_embed)
 
             elif current_city == "London":
                 london = weather_data(51.5074, -0.1278, "London")
-                # data example - embed(title, 
-                #                           description)
+                
 
                 london_embed = hikari.Embed(title="**London**", 
                                             description=f"Temperature: {london[1]}°C\nWeather Condition: {london[0]}\nFeels Like: {london[4]}°C\nMinimum Temperature: {london[2]}°C\nMaximum Temperature: {london[3]}°C\n"+f"{outfit_recommender(london[1], london[0])}",
