@@ -7,16 +7,11 @@
 Šī projekta mērķis ir izveidot Discord bota komandu, kas spēj sniegt aktuālu informāciju par laikapstākļiem izvēlētajās pilsētās (piemēram, Rīgā, Londonā, Berlīnē, Parīzē, Romā un Madridē), kā arī sniegt apģērba ieteikumus, balstoties uz konkrētajiem laika apstākļiem.
 
 Lietotājs izvēlas pilsētu no saraksta, un bots atbild ar iekapsulētu ziņojumu (embed), kurā tiek attēlota informācija par:
-
-Pašreizējo temperatūru
-
-Sajūtu temperatūru
-
-Minimālo un maksimālo temperatūru
-
-Laikapstākļu aprakstu
-
-Ieteicamo apģērbu
+ - pašreizējo temperatūru
+ - sajūtu temperatūru
+ - minimālo un maksimālo temperatūru
+ - laikapstākļu aprakstu
+ - ieteicamo apģērbu
 
 ## Izmantotās Python bibliotēkas un to pielietojums
 
