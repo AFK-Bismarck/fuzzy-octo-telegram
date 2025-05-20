@@ -1,6 +1,5 @@
 # Weather Bot | Projekta dokumentācija
 
-# Laikapstākļu un Apģērba Ieteikumu Discord Bots
 
 ## Projekta uzdevums
 
