@@ -6,7 +6,7 @@ import requests
 from main import outfit_recommender
 from main import weather_data
 import re
-import datetime
+
 
 # Create a GatewayBot instance
 bot = hikari.GatewayBot("your_bot_token_here")
