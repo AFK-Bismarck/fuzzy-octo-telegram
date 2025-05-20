@@ -28,9 +28,9 @@ Lietotājs izvēlas pilsētu no saraksta, un bots atbild ar iekapsulētu ziņoju
 
 Projektā tiek izmantotas šādas paša definētas datu struktūras:
 
-**Vārdnīca (dictionary)**: ar laikapstākļu kodiem. Tā pārvērš laika kodus (piemēram, 0–99) saprotamā tekstā. Katrai kodu grupai ir pievienots skaidrojums, piemēram: "Rain", "Snow", "Clear sky".
+ - **vārdnīca (dictionary)**: ar laikapstākļu kodiem. Tā pārvērš laika kodus (piemēram, 0–99) saprotamā tekstā. Katrai kodu grupai ir pievienots skaidrojums, piemēram: "Rain", "Snow", "Clear sky".
 
-**Tuple**: funkcija weather_data() atgriež piecu elementu tuple ar datiem: laika apraksts, temperatūra, minimālā temperatūra, maksimālā temperatūra, sajūtu temperatūra.
+ - **tuple**: funkcija weather_data() atgriež piecu elementu tuple ar datiem: laika apraksts, temperatūra, minimālā temperatūra, maksimālā temperatūra, sajūtu temperatūra.
 
 ## Programmatūras izmantošana
 
