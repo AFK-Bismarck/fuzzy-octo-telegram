@@ -40,7 +40,9 @@ class Weather(
                 riga = weather_data(56.9496, 24.1052, "Moscow")
                 # data example - embed(title, 
                 #                           description)
-                riga_embed = hikari.Embed(title="**Riga**", description=f"Temperature: {riga[1]}°C\nWeather Condition: {riga[0]}\nFeels Like: {riga[4]}°C\nMinimum Temperature: {riga[2]}°C\nMaximum Temperature: {riga[3]}°C\n"+f"{outfit_recommender(riga[1], riga[0])}")
+                riga_embed = hikari.Embed(title="**Riga**", 
+                                          description=f"Temperature: {riga[1]}°C\nWeather Condition: {riga[0]}\nFeels Like: {riga[4]}°C\nMinimum Temperature: {riga[2]}°C\nMaximum Temperature: {riga[3]}°C\n"+f"{outfit_recommender(riga[1], riga[0])}",
+                                          color=0x8F00FF)
                 await ctx.respond(riga_embed)
 
             elif current_city == "London":
