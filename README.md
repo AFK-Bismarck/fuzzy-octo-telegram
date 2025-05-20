@@ -4,7 +4,7 @@
 
 ## Projekta uzdevums
 
-Šī projekta mērķis ir izveidot Discord bota komandu, kas spēj sniegt aktuālu informāciju par laikapstākļiem izvēlētajās pilsētās (piemēram, Rīgā, Londonā, Berlīnē, Parīzē, Romā un Madridē), kā arī sniegt apģērba ieteikumus, balstoties uz konkrētajiem laika apstākļiem.
+Šī projekta mērķis ir izveidot Discord bota komandu, kas spēj sniegt aktuālu informāciju par laikapstākļiem izvēlētajās pilsētās (piemēram, Rīgā, Londonā, Berlīnē, Parīzē, Romā un Madridē), kā arī sniegt apģērba ieteikumus, balstoties uz konkrētajiem laika apstākļiem. Projekts apvieno datu iegūšanu no ārēja API, datu apstrādi un Discord mijiedarbību, izmantojot Python valodu un vairākas bibliotēkas. Tas kalpo kā labs piemērs praktiskai darbībai ar tīmekļa datiem un automatizētām atbildēm Discord vidē.
 
 Lietotājs izvēlas pilsētu no saraksta, un bots atbild ar iekapsulētu ziņojumu (embed), kurā tiek attēlota informācija par:
  - pašreizējo temperatūru
@@ -42,15 +42,11 @@ Lietotājs Discord vidē izmanto slash komandu:
 ```
 
 Kad komanda tiek izsaukta:
+- tiek nolasīta lietotāja izvēlētā pilsēta.
 
-Tiek nolasīta lietotāja izvēlētā pilsēta.
+- tiek izsaukta funkcija weather_data(), lai saņemtu aktuālos datus no Open-Meteo API.
 
-Tiek izsaukta funkcija weather_data(), lai saņemtu aktuālos datus no Open-Meteo API.
+- balstoties uz temperatūru un apstākļiem, funkcija outfit_recommender() nosaka piemērotu apģērbu.
 
-Balstoties uz temperatūru un apstākļiem, funkcija outfit_recommender() nosaka piemērotu apģērbu.
+- bots atbild ar embed ziņojumu, kurā ietverta visa informācija.
 
-Bots atbild ar embed ziņojumu, kurā ietverta visa informācija.
-
-## Nobeigums
-
-Projekts apvieno datu iegūšanu no ārēja API, datu apstrādi un Discord mijiedarbību, izmantojot Python valodu un vairākas bibliotēkas. Tas kalpo kā labs piemērs praktiskai darbībai ar tīmekļa datiem un automatizētām atbildēm Discord vidē.
