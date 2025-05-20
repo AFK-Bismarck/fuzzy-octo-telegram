@@ -15,15 +15,15 @@ Lietotājs izvēlas pilsētu no saraksta, un bots atbild ar iekapsulētu ziņoju
 
 ## Izmantotās Python bibliotēkas un to pielietojums
 
-**requests** – izmanto, lai iegūtu datus no Open-Meteo API par laikapstākļiem.
+ - **requests** – izmanto, lai iegūtu datus no Open-Meteo API par laikapstākļiem.
 
-**re** – izmanto regulāro izteiksmju apstrādei, lai no komandas iegūtu pilsētas vērtību.
+ - **re** – izmanto regulāro izteiksmju apstrādei, lai no komandas iegūtu pilsētas vērtību.
 
-**datetime** – pievienots iespējamai nākotnes funkcionalitātei, kas saistīta ar datumu un laiku.
+ - **datetime** – pievienots iespējamai nākotnes funkcionalitātei, kas saistīta ar datumu un laiku.
 
-**hikari** – bibliotēka Discord bota izveidei un embed ziņojumu sūtīšanai.
+ - **hikari** – bibliotēka Discord bota izveidei un embed ziņojumu sūtīšanai.
 
-**lightbulb** – papildu bibliotēka, kas vienkāršo slash komandu izveidi un vadību ar hikari.
+ - **lightbulb** – papildu bibliotēka, kas vienkāršo slash komandu izveidi un vadību ar hikari.
 
 ## Datu struktūras
 
