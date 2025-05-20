@@ -38,7 +38,7 @@ Projektā tiek izmantotas šādas paša definētas datu struktūras:
 Lietotājs Discord vidē izmanto slash komandu:
 
 ```bash
-/weather city:Riga
+/weather city:Riga, London, Berlin, Paris, Rome, Madrid
 ```
 
 Kad komanda tiek izsaukta:
