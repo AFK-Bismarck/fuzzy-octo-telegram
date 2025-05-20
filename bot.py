@@ -81,8 +81,9 @@ class Weather(
                                             description=f"Temperature: {madrid[1]}°C\nWeather Condition: {madrid[0]}\nFeels Like: {madrid[4]}°C\nMinimum Temperature: {madrid[2]}°C\nMaximum Temperature: {madrid[3]}°C\n"+f"{outfit_recommender(madrid[1], madrid[0])}",
                                             color=0x8F00FF)
                 await ctx.respond(madrid_embed)
-            
-            raise ValueError("Invalid city selected.")
+                
+            elif type(current_city) == str:
+                raise ValueError("Invalid city selected.")
          except ValueError as e:
             await ctx.respond("Please select a valid city from the list.")
 
