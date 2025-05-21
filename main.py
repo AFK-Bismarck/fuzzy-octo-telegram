@@ -1,8 +1,6 @@
 
 import requests
 
-
-
 def weather_data(lati, long, timezone):
 
     api = f"https://api.open-meteo.com/v1/forecast?latitude={lati}&longitude={long}&daily=temperature_2m_max,temperature_2m_min,apparent_temperature_max,apparent_temperature_min,wind_speed_10m_max&current=temperature_2m,relative_humidity_2m,precipitation,rain,showers,snowfall,apparent_temperature,wind_speed_10m,weather_code,cloud_cover&timezone=Europe%2F{timezone}"
@@ -28,15 +26,13 @@ def weather_data(lati, long, timezone):
     }
     weather_mapping = {}
 
+    #Builds a dictionary mapping each individual weather code to its description. e.g(50:"Drizzle")
     for (start, end), description in mapping_ranges:
         for code in range(start, end + 1):
             weather_mapping[code] = description
 
-# Now you can use .get() directly on the dictionary.
+
     weather_condition = weather_mapping.get(weather_code, "Unknown")
-
-    weather_condition =  weather_mapping.get(weather_code)
-
 
     temperature = int(temperature)
     minimum_temperature[0] = int(minimum_temperature[0])
